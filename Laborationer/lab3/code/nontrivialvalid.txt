@@ -1,0 +1,15 @@
+[[cl, [auto, cu]],
+ [cu, [cl, ou]],
+ [ou, [cu, ol]],
+ [ol, [ou]],
+ [auto, [cl, ou]]].
+
+[[cl, [q]],
+ [auto, [q]],
+ [cu, []],
+ [ou, [p]],
+ [ol, [p, q]]].
+
+cl.
+
+ef(and(q,af(p))).
