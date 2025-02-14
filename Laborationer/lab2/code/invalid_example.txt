@@ -1,0 +1,13 @@
+[imp(k,n)].
+
+or(and(k,n), s).
+
+[
+    [1, imp(k,n), premise],
+    [
+        [2, k, assumption],
+        [3, n, impel(1,2)], % 2,1 is the correct order
+        [4, and(k,n), andint(2,3)]
+    ], % missing implication
+    [5, or(and(k,n), s), orint1(4)] % references a line in a closed box
+].

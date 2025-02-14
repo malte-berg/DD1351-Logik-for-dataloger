@@ -1,0 +1,20 @@
+[imp(p, imp(q, r))].
+
+imp(and(q, neg(r)), neg(p)).
+
+[
+    [1, imp(p, imp(q, r)), premise],
+    [
+        [2, and(q, neg(r)), assumption],
+        [3, q, andel1(2)],
+        [4, neg(r), andel2(2)],
+        [
+            [5, p, assumption],
+            [6, imp(q, r), impel(5, 1)],
+            [7, r, impel(3, 6)],
+            [8, cont, negel(7, 4)]
+        ],
+        [9, neg(p), negint(5, 8)]
+    ],
+    [10, imp(and(q, neg(r)), neg(p)), impint(2, 9)]
+].

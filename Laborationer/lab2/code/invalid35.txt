@@ -1,0 +1,13 @@
+[q].
+
+and(p, q).
+
+[
+  [1, q, premise],
+  [
+    [2, neg(neg(p)), assumption],
+    [3, q, copy(1)]
+  ],
+  [4, p, negnegel(2)],
+  [5, and(p, q), andint(4, 1)]
+].

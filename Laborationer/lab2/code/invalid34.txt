@@ -1,0 +1,17 @@
+[imp(neg(p), neg(r)), r].
+
+p.
+
+[
+  [1, imp(neg(p), neg(r)), premise],
+  [2, r, premise],
+  [
+    [3, neg(p), assumption],
+    [4, neg(r), impel(3, 1)]
+  ],
+  [
+    [5, neg(r), assumption],
+    [6, cont, negel(2, 5)]
+  ],
+  [7, p, pbc(3, 6)]
+].

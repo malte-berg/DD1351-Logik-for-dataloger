@@ -1,0 +1,5 @@
+[imp(neg(s), k), imp(k, n), imp(and(k, n), neg(s))].
+
+or(and(k, neg(s)), and(neg(k), s)).
+
+X.
